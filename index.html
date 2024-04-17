@@ -21,19 +21,22 @@
             <div class="box_music">
                 <div class="box_music_conteudo">
                     <div class="box_img_title">
-                        <img id="img_Banda" src="./src/imgs//catedral.jpg" alt="">
-                        <p>Nosso Amor - Catedral</p>
+                        <img id="img_Banda" src="./src/imgs/catedral.jpg" alt="">
+                        <p id="title">Nosso Amor - Catedral</p>
                     </div>
                     <div class="box_buttons">
-                        <img src="./src/imgs/voltar.png" alt="">
-                        <img src="./src/imgs/pausa.png" alt="">
-                        <img src="./src/imgs/next-sing.png" alt="">
-                        <audio src="./src/" autoplay></audio>
+                        <img onclick="beforeMusic()" src="./src/imgs/voltar.png" alt="">
+                        <img id="pauseorplay" onclick="playPause()" onclick="pause()" src="./src/imgs/botao-play.png" alt="">
+                        <img onclick="nextMusic()" id="nextButton" src="./src/imgs/next-sing.png" alt="">
+                        <audio id="audio" src="./src/musics/O Nosso Amor (Ao Vivo).mp3" ></audio>
                     </div>
 
                 </div>
             </div>
     </main>
+    <script src="./scripts/script.js"></script>
+    
+   
 </body>
 
 </html>

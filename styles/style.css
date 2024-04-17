@@ -28,7 +28,7 @@ header img{
     width: 70px;
 }
 header h2{
-    color: #EDF2F4;
+    color: #2B2D42;
 }
 main{
     display: flex;
@@ -60,19 +60,29 @@ main{
     flex-direction: column;
     gap: 50px;
 }
-.box_image_title{
+.box_image_title {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-   
+    height: auto; /* Permitir altura automática para acomodar títulos mais longos */
+    width: 400px; /* Ajustar a largura conforme necessário */
 }
-#img_Banda{
-    width: 200px;
+
+#img_Banda {
+    width: 200px; /* Ajustar o tamanho da imagem conforme necessário */
+    height: auto; /* Permitir que a altura seja ajustada automaticamente */
     border-radius: 50px;
+    object-fit: cover;
 }
+
+
 p{
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: #EF233C;
+}
+.position{
+    position: relative;
+    left: 15px;
 }
