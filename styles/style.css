@@ -34,7 +34,8 @@ main{
     display: flex;
     justify-content: center;
     background-color: #D9D9D9;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     height: 500px;
     border-radius: 134px;
     
@@ -70,7 +71,8 @@ main{
 }
 
 #img_Banda {
-    width: 200px; /* Ajustar o tamanho da imagem conforme necessário */
+    max-width: 200px; /* Ajustar o tamanho da imagem conforme necessário */
+    width: 100%;
     height: auto; /* Permitir que a altura seja ajustada automaticamente */
     border-radius: 50px;
     object-fit: cover;
@@ -85,4 +87,13 @@ p{
 .position{
     position: relative;
     left: 15px;
+}
+/* RESPONSIVIDADE */
+@media(max-width:500px){
+    main{
+        width: 100vw;
+    }
+    img{
+        width: 50vw ;
+    }
 }
